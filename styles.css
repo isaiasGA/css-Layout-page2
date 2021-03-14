@@ -13,22 +13,27 @@ p{margin:0;}
 cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 
-/*Typography styles*/
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/*===================================================================================
+                                  Typography styles
+=====================================================================================*/
 
 html{ 
    font-size: 1px;/*for using REM units*/
 }
+
 body{
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+   margin: 0;
+   font-family: 'Shippori Mincho B1', serif;
    font-size: 16rem;
-   font-weight: 400;
+   font-weight: 300;
    line-height: 1.3;
    color: #222;
 }
-
-
-
-
 
 h1, h2, h3 {
   /*
@@ -44,6 +49,129 @@ h4 {
  font-family: 'Cedarville Cursive', cursive;
 }
 
-p, a, button {
-  font-family: 'Raleway', sans-serif;
+.main-title {
+  color: #f0f0f0;
+  font-size: 13rem;
+}
+
+
+/*==============================================================================================
+                                            Layout
+================================================================================================*/
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  border: 13px solid #DCD2D0;
+}
+
+          /*Header*/
+
+
+/*Navigation*/
+
+.navigation-bar {
+  outline: 1px solid red;
+  background-color: #F4ECE9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation-title {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+nav ul {
+  display: flex;
+  font-size: 18rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav li {
+  padding: 1em 0;
+}
+
+nav li:last-child {
+  margin-bottom: 1em;
+}
+
+nav a {
+  border-bottom: 1px solid;
+}
+
+/*drop down menu*/
+
+.drop-content {
+  display: none;
+  text-align: center;
+  margin-top: .5em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop-down-menu:hover .drop-content, 
+.drop-down-menu:focus .drop-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-item:hover {
+  background-color: grey;
+}
+
+.drop-item {
+  padding: 0.3em 0;
+}
+
+/*Main header Image*/
+
+.header-img {
+  background-image: url('https://images.unsplash.com/reserve/8T8J12VQxyqCiQFGa2ct_bahamas-atlantis.jpg?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 31%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.title-container {
+  background-color: #6A9792;
+  text-align: center;
+  position: relative;
+  top: 6em;
+  margin: 0 2em;
+  padding: 1em 0;
+}
+
+.reviews-button {
+  margin-top: 1em;
+  background-color: white;
+  padding: 0.5em 1em;
+  font-size: 11rem;
+  color: grey;
+}
+
+
+            /*Main Content*/
+  
+
+
+
+
+
+
+
+/*================================================================================================
+                                           Media Queries
+==================================================================================================*/
+
+@media(min-width: 900px) {
+  .container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  border: 48px solid #DCD2D0;
+}
 }
