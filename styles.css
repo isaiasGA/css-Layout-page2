@@ -18,6 +18,10 @@ img {
   max-width: 100%;
   display: block;
 }
+
+footer {
+  text-align: center;
+}
 /*===================================================================================
                                   Typography styles
 =====================================================================================*/
@@ -36,22 +40,48 @@ body{
 }
 
 h1, h2, h3 {
-  /*
-font-weight options: 
-Light 300
-Regular 400
-Medium 500
-*/
   font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  color: #f0f0f0;
+  font-size: 13rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 21rem;
+  margin: 0.1em 0 1em;
+}
+
+.navigation-title {
+  font-size: 17rem;
 }
 
 h4 {
  font-family: 'Cedarville Cursive', cursive;
+ font-size: 23rem;
 }
 
-.main-title {
-  color: #f0f0f0;
-  font-size: 13rem;
+.article-title {
+  font-size: 26rem;
+  padding: 2em 0;
+  font-weight: 400;
+}
+
+.footer-title {
+  font-size: 26rem;
+  padding-top: 3em;
+  font-weight: 400;
+}
+
+.footer-article-desc {
+  font-size: 19rem;
+  margin-top: 0.8em;
 }
 
 
@@ -63,6 +93,7 @@ h4 {
   width: 100%;
   margin: 0 auto;
   border: 13px solid #DCD2D0;
+  background-color: #F4ECE9
 }
 
           /*Header*/
@@ -71,7 +102,6 @@ h4 {
 /*Navigation*/
 
 .navigation-bar {
-  outline: 1px solid red;
   background-color: #F4ECE9;
   display: flex;
   flex-direction: column;
@@ -91,11 +121,11 @@ nav ul {
 }
 
 nav li {
-  padding: 1em 0;
+  padding: 0.7em 0;
 }
 
 nav li:last-child {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 nav a {
@@ -140,9 +170,9 @@ nav a {
   background-color: #6A9792;
   text-align: center;
   position: relative;
-  top: 6em;
+  top: 5em;
   margin: 0 2em;
-  padding: 1em 0;
+  padding: 1em;
 }
 
 .reviews-button {
@@ -156,8 +186,93 @@ nav a {
 
             /*Main Content*/
   
+article {
+  text-align: center;
+}
+
+.article-container {
+  margin-bottom: 3em;
+}
+
+.article-img {
+  height: 42vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-text {
+  padding: 0 6em;
+  margin: 2em 0;
+}
+
+.article-button {
+  background-color: #6A9792;
+  padding: 1em 3em;
+  color: f0f0f0;
+}
+
+/*bottom image header*/
+
+.main-img-container {
+  background-image: url(https://images.unsplash.com/photo-1462823985959-022de68638a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80);
+  background-size: cover;
+  background-position: center;
+  height: 33%;
+  background-repeat: no-repeat;
+}
+
+.main-img-text-container {
+  background-color: #B1D7D8;
+  margin: 0 7em;
+  text-align: center;
+  padding: 1.5em;
+  color: gray;
+  position: relative;
+  top: 4em;
+}
+
+.main-img-title {
+  font-size: 12rem;
+}
+
+.main-img-button {
+  font-size: 11rem;
+  padding: 0.5em 1em;
+  background-color: f0f0f0;
+  margin-top: 2em;
+}
 
 
+/*FOOTER */
+
+.article-img-container {
+  background-size: cover;
+  background-position: center;
+  height: 74%;
+  background-repeat: no-repeat;
+}
+
+.footer-article {
+  margin-top: 6em;
+}
+
+.italy-article-img {
+  background-image: url("https://images.unsplash.com/photo-1480548004877-593316be2bd5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+}
+
+.japan-article-img {
+background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixid=MXwxM…0by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+}
+
+.mexico-article-img {
+  background-image: url("https://images.unsplash.com/photo-1509818139432-c67e4197a914?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+}
+
+.footer-img-title {
+  background-color: #F0DFCB;
+  width: 14%;
+  padding: .2em;
+}
 
 
 
