@@ -283,10 +283,10 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
                                            Media Queries
 ==================================================================================================*/
 
-@media(min-width: 900px) {
+@media(min-width: 1004px) {
 
   .container {
-		max-width: 900px;
+		max-width: 1200px;
 		width: 90%;
 		margin: 0 auto;
 		border: 48px solid #DCD2D0; 
@@ -310,9 +310,9 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
  }
 
  nav ul {
-    font-size: 10rem;
+    font-size: 11rem;
     flex-direction: row;
-    padding-top: 0.5em;
+    padding: 1em;
     padding-right: 1em;
  }
 
@@ -373,7 +373,7 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
  
  .article-text {
 	 font-size: 15rem;
-	 padding: 1em 0.5em;
+	 padding: 1em 1.5em;
 	 margin: 0;
  }
 
@@ -382,5 +382,58 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
 	padding: 1em;
 	margin: 0 2em;
  }
+
+ /*footer banner*/
+
+.main-img-container {
+	height: 50%;
+}
+
+.main-img-text-container {
+	margin: 0 16em;
+	padding: 1.5em;
+	top: 9em;
+}
+
+.main-img-title {
+	font-size: 18rem;
+  letter-spacing: 2px;
+}
+
+.main-img-button {
+	font-size: 11rem;
+  padding: 0.8em 1em;
+}
+
+/*Footer articles*/
+
+.footer-articles {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-article {
+	display: flex;
+	flex-direction: column;
+	width: 27%;
+	margin-right: 2em;
+}
+
+.footer-article:last-child {
+	margin-right: 0;
+}
+
+.article-img-container{
+	height: 43vh;
+}
+
+.footer-img-title {
+	width: 33%;
+	padding: 0.2en;
+}
+
+.footer-article-desc {
+	font-size: 18rem;
+}
 
 }
