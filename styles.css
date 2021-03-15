@@ -46,11 +46,12 @@ h1, h2, h3 {
 h1 {
   color: #f0f0f0;
   font-size: 13rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2 {
-  font-weight: 500;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 h3 {
@@ -178,9 +179,9 @@ nav a {
 .reviews-button {
   margin-top: 1em;
   background-color: white;
-  padding: 0.5em 1em;
+  padding: 0.8em 1em;
   font-size: 11rem;
-  color: grey;
+  color: #C4C4C4;
 }
 
 
@@ -283,6 +284,7 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
 ==================================================================================================*/
 
 @media(min-width: 900px) {
+
   .container {
 		max-width: 900px;
 		width: 90%;
@@ -290,8 +292,13 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
 		border: 48px solid #DCD2D0; 
  }
 
- /*header*/
+ h1 {
+	font-size: 18rem;
+}
 
+						 /*header*/
+
+/*Nav Bar*/
  .navigation-bar {
   	flex-direction: row;
 		justify-content: space-between;
@@ -321,5 +328,17 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
 	 border-bottom: none;
  }
 
+ /*Header banner*/
+
+ .header-img {
+	 height: 44%;
+ }
+
+ .title-container {
+	 top: 9em;
+	 margin: 0 9em;
+ }
+
+ 
 
 }
