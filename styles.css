@@ -284,9 +284,42 @@ background-image: url('https://images.unsplash.com/photo-1498036882173-b41c28a8b
 
 @media(min-width: 900px) {
   .container {
-  max-width: 900px;
-  width: 90%;
-  margin: 0 auto;
-  border: 48px solid #DCD2D0;
-}
+		max-width: 900px;
+		width: 90%;
+		margin: 0 auto;
+		border: 48px solid #DCD2D0; 
+ }
+
+ /*header*/
+
+ .navigation-bar {
+  	flex-direction: row;
+		justify-content: space-between;
+ }
+
+ .navigation-title {
+		padding-top: 0.3em;
+		padding-left: 1em;
+ }
+
+ nav ul {
+    font-size: 10rem;
+    flex-direction: row;
+    padding-top: 0.5em;
+    padding-right: 1em;
+ }
+
+ nav li {
+    padding: 0 0.5em;
+ }
+
+ nav li:last-child {
+	 margin-bottom: 0;
+ }
+
+ nav a {
+	 border-bottom: none;
+ }
+
+
 }
